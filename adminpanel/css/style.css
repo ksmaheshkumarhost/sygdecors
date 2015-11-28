@@ -1,0 +1,426 @@
+@charset "utf-8";
+body{
+	margin:0;
+	padding:0;
+	background-color:#FFFFFF;
+	font-family:verdana,geneva,arial,helvetica,sans-serif;
+}
+
+a{
+	text-decoration:none;
+}
+
+img{
+	border:0;
+}
+
+li{
+	list-style:none;
+}
+
+.clear{
+	clear:both;
+}
+
+#wrapper {
+	width:100%;
+	height:auto;
+}
+
+#head{
+	background-color: #CB0003;
+    border-bottom: 8px solid #FECA1E;
+    height: auto;
+    min-height: 80px;
+    width: 100%;
+}
+
+.logo{
+	float:left;
+	width:160px;
+	height:60px;
+	margin:10px;
+}
+
+.menu_bar{
+	width:100%;
+	height:auto;
+}
+
+/*---------------------------css menu--------------------------*/
+
+#cssmenu{
+	border:none;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+	color:8e8e8e;
+}
+#cssmenu ul{
+	background:#F3F3F3;
+	height:35px;
+	list-style:none;
+	margin:0;
+	padding:0;
+	border-bottom:1px solid #cdcdcd;
+}
+#cssmenu li{
+	float:left;
+	padding:0px 8px 0px 8px;
+}
+#cssmenu li a{
+	color:#333;
+	display:block;
+	line-height:35px;
+	padding:0px 25px;
+	text-align:center;
+	text-decoration:none;
+}
+#cssmenu li a:hover{
+	background:#87AE46;
+	color:#ffffff;
+}
+#cssmenu li ul{
+	background:#e0e0e0;
+	border-left:1px solid #87AE46;
+	border-right:1px solid #87AE46;
+	border-bottom:1px solid #87AE46;
+	display:none;
+	height:auto;
+	position:absolute;
+	width:225px;
+	z-index:200;
+	/*top:1em;
+	/*left:0;*/
+}
+#cssmenu li:hover ul{
+	display:block;
+}
+#cssmenu li li {
+	display:block;
+	float:none;
+	padding:0px;
+	width:225px;
+}
+
+#cssmenu li li a span{
+	font-size:11px;
+}
+
+#cssmenu li ul a{
+	display:block;
+	font-size:12px;
+	font-style:normal;
+	padding:0px 10px 0px 15px;
+	text-align:left;
+}
+#cssmenu li ul a:hover{
+	background:#87AE46;
+	color:#FFF;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+}
+#cssmenu p{
+	clear:left;
+}	
+#cssmenu .active > a{
+	background:#87AE46;
+	color:#ffffff;
+}
+#cssmenu .active > a:hover {
+	color:#ffffff;
+}
+
+/*---------------------------css menu--------------------------*/
+
+	
+/*----------------------------left menu-------------------------------------*/
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+ul.container{
+	/* The topmost UL */
+	width:250px;
+	margin-top: 20px;
+}
+
+li{
+	list-style:none;
+	text-align:left;
+}
+
+li.menu{
+	/* The main list elements */
+	padding:0px 0;
+	width:100%;
+}
+
+li.button a{
+	/* The section titles */
+	display:block;
+	font-size:12px;
+	height:34px;
+	overflow:hidden;
+	padding:10px 20px 0;
+	position:relative;
+	width:200px;
+}
+
+li.button a:hover{
+	/* Removing the inherited underline from the titles */
+	text-decoration:none;
+}
+
+li.button a span{
+	/* This span acts as the right part of the section's background */
+	background-color: #cdcdcd;
+    border-radius: 50px;
+    display: block;
+    float: right;
+    padding: 5px 9px;
+	color:#000;
+}
+
+/* Setting up different styles for each section color */
+li.button a{
+	background: none repeat scroll 0 0 #333333;
+    border-bottom: 1px solid #838383;
+    color: #FFFFFF;
+    width: 210px;
+}
+/* The hover effects */
+
+li.button a:hover{ color:#FECA1E;}
+
+.dropdown{
+	/* The expandable lists */
+	display:none;
+	width:100%;
+}
+
+.dropdown li{
+	/* Each element in the expandable list */
+	color:#CCCCCC;
+	padding:6px 18px;
+}
+
+.dropdown li:hover{
+	/* Each element in the expandable list */
+	color:#000;
+	background-color:#FECA1E;
+}
+
+.dropdown li:hover > a{
+	color:#333;
+}
+
+.dropdown li a{
+	color:#FFFFFF;
+	font-size:12px;
+}
+
+.dropdown ul{
+	background-color:#636363;
+}
+
+.button{
+	margin-bottom:0px;
+}
+
+.block{
+	float:left;
+	margin-top:25px;
+	width: 100%;
+}
+
+.lable{
+	width:200px;
+	font-size:12px;
+	float:left;
+	padding:5px;
+}
+
+.col{
+	font-size:14px;
+	float:left;
+	padding:5px;
+}
+
+.textbox{
+	float: left;
+    margin-left: 20px;
+    padding: 5px;
+    width: 30%;
+	border:1px solid #cdcdcd;
+	background:#FFF;
+}
+
+.selectbox{
+	float: left;
+    margin-left: 20px;
+    padding: 5px;
+    width: 31%;
+	border:1px solid #cdcdcd;
+	background:#FFF;
+}
+
+.textarea{
+	float: left;
+    margin-left: 20px;
+    padding: 5px;
+    width: 30%;
+	border:1px solid #cdcdcd;
+	background:#FFF;
+}
+
+.checkbox{
+	margin: 9px 0px 9px 20px;
+	float:left;
+}
+
+.opt{
+	float:left;
+	color:#333;
+	font-size:12px;
+	padding:7px;
+}
+
+.submit{
+	background-color: #CB0003;
+    border: 0 none;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    padding: 7px 17px;
+}
+
+.block_main{
+	margin-top:10px;
+}
+
+.cont{
+	background-color: #F6F6F6;
+    border: 1px solid #CDCDCD;
+    padding: 20px 20px 0;
+}
+
+#menu_bar{
+	display:none;
+}
+
+/*----------------------------left menu-------------------------------------*/
+
+.body_wapper{
+	width:100%;
+	height:auto;
+}
+
+.left_body{
+	width:250px;
+	min-height:700px;
+	background-color:#333;
+	float:left;
+}
+
+.right_body{
+	background-color: #FFF;
+    margin-left: 250px;
+    min-height: 650px;
+    padding:20px 20px;
+}
+
+.footer{
+	background-color: #CDCDCD;
+    color: #000000;
+    font-size: 10px;
+    line-height: 35px;
+    min-height: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.row{
+	height:auto;
+}
+
+.full_title{
+	border-bottom: 1px solid #999;
+    color: #333333;
+    padding-bottom: 10px;
+	font-weight:bold;
+}
+
+.logout{
+	float:right;
+	margin:10px;
+}
+
+.logout a{
+	color:#FFF;
+	font-size:12px;
+}
+
+.logout a:hover{
+	text-decoration:underline;
+}
+
+.user{
+	color:#FFF;
+	font-size:16px;
+	position:relative;
+	top:10px;
+}
+
+.login_bg{
+	background-color:#FFF !important;
+}
+
+.login_box{
+	width:300px;
+	margin:auto;
+	min-height:150px;
+	background-color:#BA0A0A;
+	margin-top:200px;
+	border-radius:3px;
+}
+
+.login_title{
+	border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    float: left;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.login_lable{
+	width:90%;
+	float:left;
+	padding:2% 5%;
+	color:#FFFFFF;
+	font-size:14px;
+}
+
+.login_textbox{
+	width:80%;
+	float:left;
+	padding:3% 5%;
+	margin-left:5%;
+	margin-bottom:3%;
+}
+
+.login_sub{
+	background-color: #FEC21A;
+    border: 1px solid #333333;
+    float: left;
+    margin: 13px 106px;
+    padding: 4px 20px;
+	cursor:pointer;
+}
